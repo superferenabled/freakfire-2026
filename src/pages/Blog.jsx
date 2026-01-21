@@ -8,9 +8,9 @@ const posts = [
 
 export default function Blog() {
   return (
-    <section className="about">
+    <section className="px-8 py-6">
       <h2>Blog</h2>
-      <div className="cards">
+      <div className="flex gap-4">
         {posts.map((p) => (
           <Card key={p.id} title={p.title}>
             <p>{p.excerpt}</p>

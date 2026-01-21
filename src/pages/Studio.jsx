@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Studio() {
   return (
-    <section className="about">
+    <section className="px-8 py-6">
       <h2>About FreakFire</h2>
       <p>
         FreakFire is a boutique game studio specializing in co-development and

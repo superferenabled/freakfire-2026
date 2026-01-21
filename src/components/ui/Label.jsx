@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Label({ children, htmlFor }) {
   return (
-    <label className="ui-label" htmlFor={htmlFor}>
+    <label className="block font-semibold mb-1.5" htmlFor={htmlFor}>
       {children}
     </label>
   )

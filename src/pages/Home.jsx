@@ -4,13 +4,13 @@ import Card from '../components/ui/Card'
 export default function Home() {
   return (
     <>
-      <section className="hero">
-        <h1>FreakFire — Games That Ignite</h1>
-        <p>We build immersive worlds and bold gameplay for players everywhere.</p>
-        <a className="cta" href="/contact">Work with us</a>
+      <section className="px-8 py-16 text-center">
+        <h1 className="text-4xl mb-3">FreakFire — Games That Ignite</h1>
+        <p className="mb-4 opacity-90">We build immersive worlds and bold gameplay for players everywhere.</p>
+        <a className="bg-f-accent text-black px-4 py-2.5 rounded-lg no-underline font-bold" href="/contact">Work with us</a>
       </section>
 
-      <section id="games" className="cards">
+      <section id="games" className="flex gap-4 px-8 py-6">
         {/* Use shadcn-style local Card component */}
         <Card title="Action RPGs">
           <p>Deep systems, visceral combat, memorable characters.</p>
