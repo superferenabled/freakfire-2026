@@ -9,7 +9,7 @@ export default function Header() {
                 <NavLink
                     to="/"
                     className={({ isActive }) =>
-                        `nav-link text-xl ${isActive ? "text-f-accent active" : "text-gray-300 hover:text-blue-300"}`
+                        `nav-link text-xl font-semibold ${isActive ? "text-f-accent active" : "text-gray-300 hover:text-blue-300"}`
                     }
                 >
                     Home
@@ -17,7 +17,7 @@ export default function Header() {
                 <NavLink
                     to="/games"
                     className={({ isActive }) =>
-                        `nav-link text-xl ${isActive ? "text-f-accent active" : "text-gray-300 hover:text-green-300"}`
+                        `nav-link text-xl font-semibold ${isActive ? "text-f-accent active" : "text-gray-300 hover:text-green-300"}`
                     }
                 >
                     Games
@@ -25,7 +25,7 @@ export default function Header() {
                 <NavLink
                     to="/studio"
                     className={({ isActive }) =>
-                        `nav-link text-xl ${isActive ? "text-f-accent active" : "text-gray-300 hover:text-purple-300"}`
+                        `nav-link text-xl font-semibold ${isActive ? "text-f-accent active" : "text-gray-300 hover:text-purple-300"}`
                     }
                 >
                     The Studio
@@ -33,7 +33,7 @@ export default function Header() {
                 <NavLink
                     to="/blog"
                     className={({ isActive }) =>
-                        `nav-link text-xl ${isActive ? "text-f-accent active" : "text-gray-300 hover:text-orange-300"}`
+                        `nav-link text-xl font-semibold ${isActive ? "text-f-accent active" : "text-gray-300 hover:text-orange-300"}`
                     }
                 >
                     Blog
@@ -41,7 +41,7 @@ export default function Header() {
                 <NavLink
                     to="/contact"
                     className={({ isActive }) =>
-                        `nav-link text-xl ${isActive ? "text-f-accent active" : "text-gray-300 hover:text-pink-300"}`
+                        `nav-link text-xl font-semibold ${isActive ? "text-f-accent active" : "text-gray-300 hover:text-pink-300"}`
                     }
                 >
                     Contact
