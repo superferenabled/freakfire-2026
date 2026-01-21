@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 /* base overrides for the project */
+:root { --accent: #ff6b6b; }
 *{box-sizing:border-box}
 body{margin:0;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial; background:linear-gradient(180deg,#090a0f 0%, #0f141a 100%); color:#e6eef8;}

@@ -1,16 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 export default function Header() {
   return (
     <header className="flex justify-between items-center px-8 py-4.5">
       <div className="font-bold text-3xl text-f-accent">FreakFire</div>
       <nav className="flex space-x-4">
-        <Link to="/" className="text-gray-300 hover:text-white transition-colors">Home</Link>
-        <Link to="/games" className="text-gray-300 hover:text-white transition-colors">Games</Link>
-        <Link to="/studio" className="text-gray-300 hover:text-white transition-colors">The Studio</Link>
-        <Link to="/blog" className="text-gray-300 hover:text-white transition-colors">Blog</Link>
-        <Link to="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link>
+        <NavLink to="/" className={({ isActive }) => isActive ? 'text-f-accent' : 'text-gray-300 hover:text-blue-300 transition-colors'}>Home</NavLink>
+        <NavLink to="/games" className={({ isActive }) => isActive ? 'text-f-accent' : 'text-gray-300 hover:text-green-300 transition-colors'}>Games</NavLink>
+        <NavLink to="/studio" className={({ isActive }) => isActive ? 'text-f-accent' : 'text-gray-300 hover:text-purple-300 transition-colors'}>The Studio</NavLink>
+        <NavLink to="/blog" className={({ isActive }) => isActive ? 'text-f-accent' : 'text-gray-300 hover:text-orange-300 transition-colors'}>Blog</NavLink>
+        <NavLink to="/contact" className={({ isActive }) => isActive ? 'text-f-accent' : 'text-gray-300 hover:text-pink-300 transition-colors'}>Contact</NavLink>
       </nav>
     </header>
   )

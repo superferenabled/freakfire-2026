@@ -8,7 +8,7 @@ module.exports = {
       colors: {
         'f-bg': '#0f0f14',
         'f-card': '#111217',
-        'f-accent': '#ff6b6b',
+        'f-accent': 'var(--accent)',
         'f-text': '#e6eef8'
       }
     }
