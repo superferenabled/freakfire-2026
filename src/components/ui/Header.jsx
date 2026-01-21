@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function Header() {
   return (
     <header className="flex justify-between items-center px-8 py-4.5">
-      <div className="font-bold text-xl text-red-500">FreakFire</div>
+      <div className="font-bold text-3xl text-f-accent">FreakFire</div>
       <nav className="flex space-x-4">
         <Link to="/" className="text-gray-300 hover:text-white transition-colors">Home</Link>
         <Link to="/games" className="text-gray-300 hover:text-white transition-colors">Games</Link>
