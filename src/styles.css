@@ -1,4 +1,9 @@
 :root{--bg:#0f0f14;--card:#111217;--accent:#ff6b6b;--text:#e6eef8}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* base overrides for the project (kept from original stylesheet) */
 *{box-sizing:border-box}
 body{margin:0;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial; background:linear-gradient(180deg,#090a0f 0%, #0f141a 100%); color:var(--text);}
 .app{min-height:100vh;display:flex;flex-direction:column}
@@ -14,3 +19,12 @@ body{margin:0;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helveti
 .about, .contact{padding:24px 32px}
 .site-footer{text-align:center;padding:20px 0;opacity:0.7;margin-top:auto}
 @media(max-width:720px){.cards{flex-direction:column}}
+
+/* small utility tweaks for shadcn-style components */
+.ui-label{display:block;font-weight:600;margin-bottom:6px;color:var(--text)}
+.ui-input,.ui-textarea{width:100%;padding:10px 12px;border-radius:8px;background:#0b0b0e;border:1px solid #1b1b1f;color:var(--text)}
+.ui-textarea{min-height:100px}
+.ui-button{background:var(--accent);color:#111;padding:10px 14px;border-radius:8px;font-weight:700}
+.form-row{margin-bottom:12px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:720px){.form-grid{grid-template-columns:1fr}}

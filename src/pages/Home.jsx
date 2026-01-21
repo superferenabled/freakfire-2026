@@ -1,4 +1,5 @@
 import React from 'react'
+import Card from '../components/ui/Card'
 
 export default function Home() {
   return (
@@ -10,18 +11,18 @@ export default function Home() {
       </section>
 
       <section id="games" className="cards">
-        <article className="card">
-          <h3>Action RPGs</h3>
+        {/* Use shadcn-style local Card component */}
+        <Card title="Action RPGs">
           <p>Deep systems, visceral combat, memorable characters.</p>
-        </article>
-        <article className="card">
-          <h3>Multiplayer Arenas</h3>
+        </Card>
+
+        <Card title="Multiplayer Arenas">
           <p>Fast-paced competitive modes with rich progression.</p>
-        </article>
-        <article className="card">
-          <h3>Indie Originals</h3>
+        </Card>
+
+        <Card title="Indie Originals">
           <p>Small teams, big ideas — experimental, polished experiences.</p>
-        </article>
+        </Card>
       </section>
     </>
   )
