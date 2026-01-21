@@ -6,3 +6,23 @@
 :root { --accent: #ff6b6b; }
 *{box-sizing:border-box}
 body{margin:0;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial; background:linear-gradient(180deg,#090a0f 0%, #0f141a 100%); color:#e6eef8;}
+
+/* nav link underline animation */
+.nav-link {
+  position: relative;
+  transition: color 0.3s;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
